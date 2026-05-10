@@ -1,0 +1,30 @@
+// All 25 thumbnail images from public folder (encoded URLs for filenames with spaces/parens)
+export const thumbnails = [
+  { id: 1,  label: 'Design 01',  img: '/WhatsApp%20Image%202026-05-10%20at%202.53.00%20PM.jpeg' },
+  { id: 2,  label: 'Design 02',  img: '/WhatsApp%20Image%202026-05-10%20at%202.53.01%20PM.jpeg' },
+  { id: 3,  label: 'Design 03',  img: '/WhatsApp%20Image%202026-05-10%20at%202.53.01%20PM%20(1).jpeg' },
+  { id: 4,  label: 'Design 04',  img: '/WhatsApp%20Image%202026-05-10%20at%202.53.02%20PM.jpeg' },
+  { id: 5,  label: 'Design 05',  img: '/WhatsApp%20Image%202026-05-10%20at%202.53.02%20PM%20(1).jpeg' },
+  { id: 6,  label: 'Design 06',  img: '/WhatsApp%20Image%202026-05-10%20at%202.53.05%20PM.jpeg' },
+  { id: 7,  label: 'Design 07',  img: '/WhatsApp%20Image%202026-05-10%20at%202.53.05%20PM%20(1).jpeg' },
+  { id: 8,  label: 'Design 08',  img: '/WhatsApp%20Image%202026-05-10%20at%202.53.05%20PM%20(2).jpeg' },
+  { id: 9,  label: 'Design 09',  img: '/WhatsApp%20Image%202026-05-10%20at%202.53.06%20PM.jpeg' },
+  { id: 10, label: 'Design 10',  img: '/WhatsApp%20Image%202026-05-10%20at%202.53.06%20PM%20(1).jpeg' },
+  { id: 11, label: 'Design 11',  img: '/WhatsApp%20Image%202026-05-10%20at%202.53.06%20PM%20(2).jpeg' },
+  { id: 12, label: 'Design 12',  img: '/WhatsApp%20Image%202026-05-10%20at%202.53.07%20PM.jpeg' },
+  { id: 13, label: 'Design 13',  img: '/WhatsApp%20Image%202026-05-10%20at%202.53.07%20PM%20(1).jpeg' },
+  { id: 14, label: 'Design 14',  img: '/WhatsApp%20Image%202026-05-10%20at%202.53.10%20PM.jpeg' },
+  { id: 15, label: 'Design 15',  img: '/WhatsApp%20Image%202026-05-10%20at%202.53.11%20PM.jpeg' },
+  { id: 16, label: 'Design 16',  img: '/WhatsApp%20Image%202026-05-10%20at%202.53.12%20PM.jpeg' },
+  { id: 17, label: 'Design 17',  img: '/WhatsApp%20Image%202026-05-10%20at%202.53.13%20PM.jpeg' },
+  { id: 18, label: 'Design 18',  img: '/WhatsApp%20Image%202026-05-10%20at%202.53.13%20PM%20(1).jpeg' },
+  { id: 19, label: 'Design 19',  img: '/WhatsApp%20Image%202026-05-10%20at%202.53.15%20PM.jpeg' },
+  { id: 20, label: 'Design 20',  img: '/WhatsApp%20Image%202026-05-10%20at%202.53.16%20PM.jpeg' },
+  { id: 21, label: 'Design 21',  img: '/WhatsApp%20Image%202026-05-10%20at%202.53.16%20PM%20(1).jpeg' },
+  { id: 22, label: 'Design 22',  img: '/WhatsApp%20Image%202026-05-10%20at%202.53.17%20PM.jpeg' },
+  { id: 23, label: 'Design 23',  img: '/WhatsApp%20Image%202026-05-10%20at%202.53.17%20PM%20(1).jpeg' },
+  { id: 24, label: 'Design 24',  img: '/WhatsApp%20Image%202026-05-10%20at%202.53.18%20PM.jpeg' },
+  { id: 25, label: 'Design 25',  img: '/WhatsApp%20Image%202026-05-10%20at%202.53.18%20PM%20(1).jpeg' },
+];
+
+export const PROFILE_PHOTO = '/WhatsApp%20Image%202026-05-10%20at%202.55.59%20PM.jpeg';

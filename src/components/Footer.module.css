@@ -1,0 +1,128 @@
+.footer {
+  position: relative;
+  padding: 0 24px 32px;
+  background: rgba(6, 6, 15, 0.8);
+}
+
+.topLine {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0, 191, 255, 0.3), rgba(223, 0, 255, 0.3), transparent);
+  margin-bottom: 48px;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 26px;
+  color: #e2e8f0;
+  letter-spacing: 0.08em;
+  transition: color 0.3s;
+}
+
+.logo:hover {
+  color: #00bfff;
+}
+
+.logoIcon {
+  color: #00bfff;
+  text-shadow: 0 0 15px rgba(0, 191, 255, 0.7);
+}
+
+.logoAccent {
+  color: #00bfff;
+}
+
+.tagline {
+  font-size: 13px;
+  color: #475569;
+  max-width: 240px;
+}
+
+.links {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.link {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #475569;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: #00bfff;
+}
+
+.social {
+  display: flex;
+  gap: 12px;
+}
+
+.socialBtn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  transition: all 0.3s ease;
+}
+
+.socialBtn:hover {
+  border-color: #00bfff;
+  color: #00bfff;
+  box-shadow: 0 0 16px rgba(0, 191, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.copy {
+  max-width: 1200px;
+  margin: 32px auto 0;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  font-size: 12px;
+  color: #334155;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 768px) {
+  .inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .links {
+    justify-content: center;
+  }
+
+  .tagline {
+    max-width: 100%;
+  }
+}

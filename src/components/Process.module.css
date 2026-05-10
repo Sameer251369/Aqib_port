@@ -1,0 +1,189 @@
+.section {
+  padding: 120px 24px;
+  position: relative;
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  align-items: center;
+}
+
+.header {
+  text-align: center;
+}
+
+.heading {
+  font-size: clamp(40px, 5vw, 64px);
+  color: #e2e8f0;
+  line-height: 1.05;
+  margin-top: 8px;
+}
+
+/* Steps row */
+.steps {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  width: 100%;
+  position: relative;
+}
+
+.step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+}
+
+.stepNumber {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 80px;
+  line-height: 1;
+  color: rgba(0, 191, 255, 0.08);
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+.stepCard {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 36px 28px;
+  background: rgba(13, 13, 26, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  transition: border-color 0.4s, box-shadow 0.4s, transform 0.4s;
+  backdrop-filter: blur(12px);
+}
+
+.stepCard:hover {
+  border-color: rgba(0, 191, 255, 0.3);
+  box-shadow: 0 0 30px rgba(0, 191, 255, 0.1), 0 20px 40px rgba(0, 0, 0, 0.3);
+  transform: translateY(-6px);
+}
+
+.stepIconWrap {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(0, 191, 255, 0.1);
+  border: 1px solid rgba(0, 191, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00bfff;
+  flex-shrink: 0;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.stepCard:hover .stepIconWrap {
+  background: rgba(0, 191, 255, 0.18);
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.3);
+}
+
+.stepTitle {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 26px;
+  color: #e2e8f0;
+  letter-spacing: 0.04em;
+}
+
+.stepDesc {
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.7;
+}
+
+.connector {
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  padding-top: 80px;
+  flex-shrink: 0;
+}
+
+/* Banner */
+.banner {
+  width: 100%;
+  padding: 40px 48px;
+  background: linear-gradient(135deg, rgba(0, 191, 255, 0.08) 0%, rgba(223, 0, 255, 0.08) 100%);
+  border: 1px solid rgba(0, 191, 255, 0.2);
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 30% 50%, rgba(0, 191, 255, 0.06), transparent 60%),
+              radial-gradient(circle at 70% 50%, rgba(223, 0, 255, 0.06), transparent 60%);
+  pointer-events: none;
+}
+
+.bannerContent {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.bannerTitle {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 32px;
+  color: #e2e8f0;
+  letter-spacing: 0.04em;
+}
+
+.bannerSub {
+  font-size: 14px;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .steps {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .connector {
+    display: none;
+  }
+
+  .stepNumber {
+    font-size: 60px;
+  }
+
+  .banner {
+    padding: 28px 24px;
+  }
+
+  .bannerContent {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
